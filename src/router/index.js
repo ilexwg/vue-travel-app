@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Brazil from '@/views/Brazil.vue'
 import Panama from '@/views/Panama.vue'
 import Hawaii from '@/views/Hawaii.vue'
+import Jamaica from '@/views/Jamaica.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/hawaii',
     name: 'hawaii',
     component: Hawaii
+  },
+  {
+    path: '/jamaica',
+    name: 'jamaica',
+    component: Jamaica
   }
 ]
 
