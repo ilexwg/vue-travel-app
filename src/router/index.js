@@ -29,6 +29,11 @@ const routes = [
     path: '/jamaica',
     name: 'jamaica',
     component: () => import(/* webpackChunkName: 'jamaica' */ '@/views/Jamaica')
+  },
+  {
+    path: '/details/:id',
+    name: 'DestinationDetails',
+    component: () => import(/* webpackChunkName: 'DestinationDetails' */ '@/views/DestinationDetails')
   }
 ]
 

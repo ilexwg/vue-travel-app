@@ -6,11 +6,11 @@
         v-for="destination in destinations"
         :key="destination.id"
       >
-        <router-link :to="destination.slug">
+        <router-link :to="{ name: 'DestinationDetails', params: { id: destination.id } }">
           {{ destination.name }}
         </router-link>
         <figure>
-          <router-link :to="destination.slug">
+          <router-link :to="{ name: 'DestinationDetails', params: { id: destination.id } }">
             <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name">
           </router-link>
         </figure>
